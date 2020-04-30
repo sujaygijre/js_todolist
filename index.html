@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+
+<div class="container">
+    <div class="row"> 
+        <div class="col s12">
+            <div id="main" class="card">
+                <div class="card-content">
+                    <span class="card-title">Task List</span>
+                    <div class="row"> <!--this is for the rows in the div tag-->
+                        <form id="task-form"> <!--this is the task form class-->
+                            <div class="input-field col s12">
+                                <input type="text" name="task" id="task"><!--id is task-->
+                                <label for="task">TASK LIST</label>
+                            </div>     
+                        <input type="submit" value="Add Task" class="btn">
+                        </form>
+                    </div>
+                </div>
+                <div class="card-action">
+                        <h5 id="task-title">Task</h5>
+                        <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter"><!--id is filter-->
+                            <label for="filter">FILTER LIST</label>
+                        </div>
+                        <ul class="collection"></ul> <!--this is the collection class-->
+                        <a href="#" class="clear-task btn black">clear tasks</a>  <!--this is the clear task class--> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="app.js"></script>
+</body>
+</html>
